@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		574D10352C69910E00878591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574D10342C69910E00878591 /* AppDelegate.swift */; };
+		574D10372C69910E00878591 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574D10362C69910E00878591 /* SceneDelegate.swift */; };
+		574D10392C69910E00878591 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574D10382C69910E00878591 /* ContentView.swift */; };
+		574D103C2C69910E00878591 /* CoctelApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 574D103A2C69910E00878591 /* CoctelApp.xcdatamodeld */; };
+		574D103E2C69911C00878591 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574D103D2C69911C00878591 /* Assets.xcassets */; };
+		574D10412C69911C00878591 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574D10402C69911C00878591 /* Preview Assets.xcassets */; };
+		574D10442C69911C00878591 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574D10422C69911C00878591 /* LaunchScreen.storyboard */; };
+		574D104F2C69911D00878591 /* CoctelAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574D104E2C69911D00878591 /* CoctelAppTests.swift */; };
+		574D105A2C69911D00878591 /* CoctelAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574D10592C69911D00878591 /* CoctelAppUITests.swift */; };
+		574D107B2C6991FB00878591 /* ListCoctelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574D107A2C6991FB00878591 /* ListCoctelView.swift */; };
+		574D10802C69921F00878591 /* DetailCoctelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574D107F2C69921F00878591 /* DetailCoctelView.swift */; };
+		574D10852C69928800878591 /* APIEndpointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574D10842C69928800878591 /* APIEndpointModel.swift */; };
+		574D108A2C6992B400878591 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574D10892C6992B400878591 /* NetworkService.swift */; };
+		574D108F2C6992D000878591 /* UtilsEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574D108E2C6992D000878591 /* UtilsEndpoints.swift */; };
+		574D10942C6992F700878591 /* endpointsDev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 574D10932C6992F700878591 /* endpointsDev.plist */; };
+		574D10992C69930E00878591 /* endpoints.plist in Resources */ = {isa = PBXBuildFile; fileRef = 574D10982C69930E00878591 /* endpoints.plist */; };
+		574D109E2C69942700878591 /* Drinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574D109D2C69942700878591 /* Drinks.swift */; };
+		574D10A72C69964900878591 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574D10A62C69964900878591 /* InfoView.swift */; };
+		574D10AF2C6997E200878591 /* CoctelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574D10AE2C6997E200878591 /* CoctelViewModel.swift */; };
+		574D10B42C69C2AD00878591 /* IngredientesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574D10B32C69C2AD00878591 /* IngredientesViewModel.swift */; };
+		574D10B92C69C38C00878591 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574D10B82C69C38C00878591 /* Ingredients.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		574D104B2C69911D00878591 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 574D10292C69910E00878591 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 574D10302C69910E00878591;
+			remoteInfo = CoctelApp;
+		};
+		574D10562C69911D00878591 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 574D10292C69910E00878591 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 574D10302C69910E00878591;
+			remoteInfo = CoctelApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		574D10312C69910E00878591 /* CoctelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoctelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		574D10342C69910E00878591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		574D10362C69910E00878591 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		574D10382C69910E00878591 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		574D103B2C69910E00878591 /* CoctelApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoctelApp.xcdatamodel; sourceTree = "<group>"; };
+		574D103D2C69911C00878591 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		574D10402C69911C00878591 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		574D10432C69911C00878591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		574D10452C69911C00878591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		574D104A2C69911D00878591 /* CoctelAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoctelAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		574D104E2C69911D00878591 /* CoctelAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctelAppTests.swift; sourceTree = "<group>"; };
+		574D10502C69911D00878591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		574D10552C69911D00878591 /* CoctelAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoctelAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		574D10592C69911D00878591 /* CoctelAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctelAppUITests.swift; sourceTree = "<group>"; };
+		574D105B2C69911D00878591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		574D107A2C6991FB00878591 /* ListCoctelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoctelView.swift; sourceTree = "<group>"; };
+		574D107F2C69921F00878591 /* DetailCoctelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoctelView.swift; sourceTree = "<group>"; };
+		574D10842C69928800878591 /* APIEndpointModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpointModel.swift; sourceTree = "<group>"; };
+		574D10892C6992B400878591 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		574D108E2C6992D000878591 /* UtilsEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsEndpoints.swift; sourceTree = "<group>"; };
+		574D10932C6992F700878591 /* endpointsDev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = endpointsDev.plist; sourceTree = "<group>"; };
+		574D10982C69930E00878591 /* endpoints.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = endpoints.plist; sourceTree = "<group>"; };
+		574D109D2C69942700878591 /* Drinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinks.swift; sourceTree = "<group>"; };
+		574D10A62C69964900878591 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		574D10AE2C6997E200878591 /* CoctelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoctelViewModel.swift; sourceTree = "<group>"; };
+		574D10B32C69C2AD00878591 /* IngredientesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientesViewModel.swift; sourceTree = "<group>"; };
+		574D10B82C69C38C00878591 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		574D102E2C69910E00878591 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574D10472C69911D00878591 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574D10522C69911D00878591 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		574D10282C69910E00878591 = {
+			isa = PBXGroup;
+			children = (
+				574D10332C69910E00878591 /* CoctelApp */,
+				574D104D2C69911D00878591 /* CoctelAppTests */,
+				574D10582C69911D00878591 /* CoctelAppUITests */,
+				574D10322C69910E00878591 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		574D10322C69910E00878591 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				574D10312C69910E00878591 /* CoctelApp.app */,
+				574D104A2C69911D00878591 /* CoctelAppTests.xctest */,
+				574D10552C69911D00878591 /* CoctelAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		574D10332C69910E00878591 /* CoctelApp */ = {
+			isa = PBXGroup;
+			children = (
+				574D10792C6991B100878591 /* CoreData */,
+				574D10782C69919900878591 /* EndPoint */,
+				574D10772C69918B00878591 /* LaunchScreen */,
+				574D10732C69914A00878591 /* Model */,
+				574D106F2C69913F00878591 /* Networking */,
+				574D106B2C69913700878591 /* Views */,
+				574D106A2C69912F00878591 /* ViewModel */,
+				574D10342C69910E00878591 /* AppDelegate.swift */,
+				574D10362C69910E00878591 /* SceneDelegate.swift */,
+				574D103D2C69911C00878591 /* Assets.xcassets */,
+				574D10452C69911C00878591 /* Info.plist */,
+				574D103F2C69911C00878591 /* Preview Content */,
+			);
+			path = CoctelApp;
+			sourceTree = "<group>";
+		};
+		574D103F2C69911C00878591 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				574D10402C69911C00878591 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		574D104D2C69911D00878591 /* CoctelAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				574D104E2C69911D00878591 /* CoctelAppTests.swift */,
+				574D10502C69911D00878591 /* Info.plist */,
+			);
+			path = CoctelAppTests;
+			sourceTree = "<group>";
+		};
+		574D10582C69911D00878591 /* CoctelAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				574D10592C69911D00878591 /* CoctelAppUITests.swift */,
+				574D105B2C69911D00878591 /* Info.plist */,
+			);
+			path = CoctelAppUITests;
+			sourceTree = "<group>";
+		};
+		574D106A2C69912F00878591 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				574D10AE2C6997E200878591 /* CoctelViewModel.swift */,
+				574D10B32C69C2AD00878591 /* IngredientesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		574D106B2C69913700878591 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				574D10A52C69963500878591 /* Info */,
+				574D10762C69917700878591 /* Favorites */,
+				574D10752C69916500878591 /* Details */,
+				574D10742C69915700878591 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		574D106F2C69913F00878591 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				574D10892C6992B400878591 /* NetworkService.swift */,
+				574D108E2C6992D000878591 /* UtilsEndpoints.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		574D10732C69914A00878591 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				574D10842C69928800878591 /* APIEndpointModel.swift */,
+				574D109D2C69942700878591 /* Drinks.swift */,
+				574D10B82C69C38C00878591 /* Ingredients.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		574D10742C69915700878591 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				574D10382C69910E00878591 /* ContentView.swift */,
+				574D107A2C6991FB00878591 /* ListCoctelView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		574D10752C69916500878591 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				574D107F2C69921F00878591 /* DetailCoctelView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		574D10762C69917700878591 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		574D10772C69918B00878591 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				574D10422C69911C00878591 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		574D10782C69919900878591 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				574D10932C6992F700878591 /* endpointsDev.plist */,
+				574D10982C69930E00878591 /* endpoints.plist */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		574D10792C6991B100878591 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				574D103A2C69910E00878591 /* CoctelApp.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		574D10A52C69963500878591 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				574D10A62C69964900878591 /* InfoView.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		574D10302C69910E00878591 /* CoctelApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 574D105E2C69911D00878591 /* Build configuration list for PBXNativeTarget "CoctelApp" */;
+			buildPhases = (
+				574D102D2C69910E00878591 /* Sources */,
+				574D102E2C69910E00878591 /* Frameworks */,
+				574D102F2C69910E00878591 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoctelApp;
+			productName = CoctelApp;
+			productReference = 574D10312C69910E00878591 /* CoctelApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		574D10492C69911D00878591 /* CoctelAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 574D10612C69911D00878591 /* Build configuration list for PBXNativeTarget "CoctelAppTests" */;
+			buildPhases = (
+				574D10462C69911D00878591 /* Sources */,
+				574D10472C69911D00878591 /* Frameworks */,
+				574D10482C69911D00878591 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				574D104C2C69911D00878591 /* PBXTargetDependency */,
+			);
+			name = CoctelAppTests;
+			productName = CoctelAppTests;
+			productReference = 574D104A2C69911D00878591 /* CoctelAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		574D10542C69911D00878591 /* CoctelAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 574D10642C69911D00878591 /* Build configuration list for PBXNativeTarget "CoctelAppUITests" */;
+			buildPhases = (
+				574D10512C69911D00878591 /* Sources */,
+				574D10522C69911D00878591 /* Frameworks */,
+				574D10532C69911D00878591 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				574D10572C69911D00878591 /* PBXTargetDependency */,
+			);
+			name = CoctelAppUITests;
+			productName = CoctelAppUITests;
+			productReference = 574D10552C69911D00878591 /* CoctelAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		574D10292C69910E00878591 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					574D10302C69910E00878591 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					574D10492C69911D00878591 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 574D10302C69910E00878591;
+					};
+					574D10542C69911D00878591 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 574D10302C69910E00878591;
+					};
+				};
+			};
+			buildConfigurationList = 574D102C2C69910E00878591 /* Build configuration list for PBXProject "CoctelApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 574D10282C69910E00878591;
+			productRefGroup = 574D10322C69910E00878591 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				574D10302C69910E00878591 /* CoctelApp */,
+				574D10492C69911D00878591 /* CoctelAppTests */,
+				574D10542C69911D00878591 /* CoctelAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		574D102F2C69910E00878591 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574D10442C69911C00878591 /* LaunchScreen.storyboard in Resources */,
+				574D10412C69911C00878591 /* Preview Assets.xcassets in Resources */,
+				574D103E2C69911C00878591 /* Assets.xcassets in Resources */,
+				574D10992C69930E00878591 /* endpoints.plist in Resources */,
+				574D10942C6992F700878591 /* endpointsDev.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574D10482C69911D00878591 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574D10532C69911D00878591 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		574D102D2C69910E00878591 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574D107B2C6991FB00878591 /* ListCoctelView.swift in Sources */,
+				574D10A72C69964900878591 /* InfoView.swift in Sources */,
+				574D10B92C69C38C00878591 /* Ingredients.swift in Sources */,
+				574D10B42C69C2AD00878591 /* IngredientesViewModel.swift in Sources */,
+				574D10352C69910E00878591 /* AppDelegate.swift in Sources */,
+				574D108A2C6992B400878591 /* NetworkService.swift in Sources */,
+				574D103C2C69910E00878591 /* CoctelApp.xcdatamodeld in Sources */,
+				574D10372C69910E00878591 /* SceneDelegate.swift in Sources */,
+				574D10AF2C6997E200878591 /* CoctelViewModel.swift in Sources */,
+				574D10392C69910E00878591 /* ContentView.swift in Sources */,
+				574D10802C69921F00878591 /* DetailCoctelView.swift in Sources */,
+				574D108F2C6992D000878591 /* UtilsEndpoints.swift in Sources */,
+				574D10852C69928800878591 /* APIEndpointModel.swift in Sources */,
+				574D109E2C69942700878591 /* Drinks.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574D10462C69911D00878591 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574D104F2C69911D00878591 /* CoctelAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574D10512C69911D00878591 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574D105A2C69911D00878591 /* CoctelAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		574D104C2C69911D00878591 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 574D10302C69910E00878591 /* CoctelApp */;
+			targetProxy = 574D104B2C69911D00878591 /* PBXContainerItemProxy */;
+		};
+		574D10572C69911D00878591 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 574D10302C69910E00878591 /* CoctelApp */;
+			targetProxy = 574D10562C69911D00878591 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		574D10422C69911C00878591 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				574D10432C69911C00878591 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		574D105C2C69911D00878591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		574D105D2C69911D00878591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		574D105F2C69911D00878591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CoctelApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 828LF57WA4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CoctelApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KorbekSA.CoctelApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		574D10602C69911D00878591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CoctelApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 828LF57WA4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CoctelApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KorbekSA.CoctelApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		574D10622C69911D00878591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 828LF57WA4;
+				INFOPLIST_FILE = CoctelAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KorbekSA.CoctelAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoctelApp.app/CoctelApp";
+			};
+			name = Debug;
+		};
+		574D10632C69911D00878591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 828LF57WA4;
+				INFOPLIST_FILE = CoctelAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KorbekSA.CoctelAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoctelApp.app/CoctelApp";
+			};
+			name = Release;
+		};
+		574D10652C69911D00878591 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 828LF57WA4;
+				INFOPLIST_FILE = CoctelAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KorbekSA.CoctelAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoctelApp;
+			};
+			name = Debug;
+		};
+		574D10662C69911D00878591 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 828LF57WA4;
+				INFOPLIST_FILE = CoctelAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = KorbekSA.CoctelAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoctelApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		574D102C2C69910E00878591 /* Build configuration list for PBXProject "CoctelApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				574D105C2C69911D00878591 /* Debug */,
+				574D105D2C69911D00878591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		574D105E2C69911D00878591 /* Build configuration list for PBXNativeTarget "CoctelApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				574D105F2C69911D00878591 /* Debug */,
+				574D10602C69911D00878591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		574D10612C69911D00878591 /* Build configuration list for PBXNativeTarget "CoctelAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				574D10622C69911D00878591 /* Debug */,
+				574D10632C69911D00878591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		574D10642C69911D00878591 /* Build configuration list for PBXNativeTarget "CoctelAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				574D10652C69911D00878591 /* Debug */,
+				574D10662C69911D00878591 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		574D103A2C69910E00878591 /* CoctelApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				574D103B2C69910E00878591 /* CoctelApp.xcdatamodel */,
+			);
+			currentVersion = 574D103B2C69910E00878591 /* CoctelApp.xcdatamodel */;
+			path = CoctelApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 574D10292C69910E00878591 /* Project object */;
+}

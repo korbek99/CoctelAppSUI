@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>crearIssue</key>
+	<dict>
+		<key>url</key>
+		<string>https://www.thecocktaildb.com/api/json/v1/1/search.php</string>
+		<key>x-api-key</key>
+		<string>yL285dvequN1GLt1yUCdpiHy8L8lJOlO</string>
+	</dict>
+	<key>crearIngre</key>
+	<dict>
+		<key>url</key>
+		<string>www.thecocktaildb.com/api/json/v1/1/search.php</string>
+		<key>x-api-key</key>
+		<string>yL285dvequN1GLt1yUCdpiHy8L8lJOlO</string>
+	</dict>
+</dict>
+</plist>
